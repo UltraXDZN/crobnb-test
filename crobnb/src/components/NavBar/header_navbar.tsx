@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../assets/icons/logo.svg";
-import favorite from "../assets/icons/favorite.svg";
+import logo from "../../assets/icons/logo.svg";
+import favorite from "../../assets/icons/favorite.svg";
 import LanguageDropdown from "./LanguageDropdown.tsx";
 
 interface NavbarProps {

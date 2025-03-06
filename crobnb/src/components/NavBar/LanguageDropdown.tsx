@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 
-import croatiaFlag from "../assets/icons/flags/hr.svg";
-import englishFlag from "../assets/icons/flags/en.svg";
+import croatiaFlag from "../../assets/icons/flags/hr.svg";
+import englishFlag from "../../assets/icons/flags/en.svg";
 
-import arrow_down from "../assets/icons/arrow_down.svg";
+import arrow_down from "../../assets/icons/arrow_down.svg";
 
 const languages = [
     {
