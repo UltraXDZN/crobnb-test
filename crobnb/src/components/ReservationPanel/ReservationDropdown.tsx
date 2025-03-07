@@ -21,7 +21,7 @@ import left_arrow from '@assets/icons/left_arrow.svg';
 import { FiMinus, FiPlus } from "react-icons/fi";
 
 
-import { DropdownProps } from './ReservationDropdownTypes';
+import { DropdownProps } from '../../types/ReservationDropdownTypes';
 
 const ReservationDropdown: React.FC<DropdownProps> = (props) => {
     //const [isOpen, setIsOpen] = useState(false);
