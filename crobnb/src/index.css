@@ -15,8 +15,14 @@
     --color-grayscale-white: #FFFFFF;
 
 
+    --color-primary-100: #00526C;
+    --color-primary-80: #337589;
+    --color-primary-50: #80A9B6;
+    --color-primary-20: #CCDCE2;
+    --color-primary-10: #E5EDF0;
+    --color-primary-5: #F2F6F8;
+
     --color-warning-100: #A64F21;
     --color-danger-100: #9F1B1F;
-    --color-primary-100: #00526C;
     --color-success-100: #086343;
 }
