@@ -1,28 +1,66 @@
-//import { useState } from 'react'
 import './App.css'
-import Navbar from "./components/NavBar/header_navbar.tsx"
-import LandingPageBanner from "./components/Banner/landingPageBanner.tsx"
-import ReservationPanel from "./components/ReservationPanel/MainPanel.tsx"
-import TypesOfStayPanel from './components/Types_of_stay/typesOfStayPanel.tsx'
-import RegionsPanel from './components/RegionsPanel/regionsPanel.tsx'
-import NewsPanel from './components/NewsPanel/newsPanel.tsx'
-import AboutUs from './components/AboutUs/aboutUs.tsx'
-import Footer from './components/Footer/footer.tsx'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from '@components/layout'
+import LandingPage from './pages/landingPage'
+import SuccessPage from './pages/successPage'
+import ErrorPage from './pages/errorPage'
 
 function App() {
   return (
-    <>
-      <Navbar language="hr" loggedIn={false} />
-      <LandingPageBanner />
-      <ReservationPanel />
-      <div className='ml-[50px]'>
-        <TypesOfStayPanel />
-        <RegionsPanel />
-      </div>
-      <NewsPanel/>
-      <AboutUs/>
-      <Footer/>
-    </>
+    <BrowserRouter>
+      <Routes>
+
+        <Route path="/" element={
+          <Layout showFooter={true}>
+            <LandingPage />
+          </Layout>
+        } />
+
+        <Route path="/smjestaj" element={
+          <Layout showFooter={true}>
+            <LandingPage />
+          </Layout>
+        }>
+          <Route path=":id/detalji" element={
+            <Layout showFooter={true}>
+              <LandingPage />
+            </Layout>
+          } />
+        </Route>
+
+        <Route path="/login" element={
+          <Layout showFooter={true}>
+            <LandingPage />
+          </Layout>
+        } />
+
+        <Route path="/registracija" element={
+          <Layout showFooter={true}>
+            <LandingPage />
+          </Layout>
+        } />
+
+        <Route path="/rezervacija-upit/:id" element={
+          <Layout showFooter={true}>
+            <LandingPage />
+          </Layout>
+        } />
+
+        <Route path="/success" element={
+          <Layout showFooter={false}>
+            <SuccessPage />
+          </Layout>
+        } />
+
+        <Route path="*" element={
+          <Layout showFooter={false}>
+            <ErrorPage code={404} message="Stranica koju tražite nije pronađena." />
+          </Layout>
+        } />
+
+
+      </Routes>
+    </BrowserRouter>
   )
 }
 
