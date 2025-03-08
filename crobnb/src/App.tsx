@@ -7,6 +7,7 @@ import TypesOfStayPanel from './components/Types_of_stay/typesOfStayPanel.tsx'
 import RegionsPanel from './components/RegionsPanel/regionsPanel.tsx'
 import NewsPanel from './components/NewsPanel/newsPanel.tsx'
 import AboutUs from './components/AboutUs/aboutUs.tsx'
+import Footer from './components/Footer/footer.tsx'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       </div>
       <NewsPanel/>
       <AboutUs/>
+      <Footer/>
     </>
   )
 }

@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'TT Norms';
+    src: url('assets/tt-norms/TTNorms-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'TT Norms';
+    src: url('assets/tt-norms/TTNorms-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'TT Norms';
+    src: url('assets/tt-norms/TTNorms-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'TT Norms';
+    src: url('assets/tt-norms/TTNorms-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'TT Norms';
+    src: url('assets/tt-norms/TTNorms-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
