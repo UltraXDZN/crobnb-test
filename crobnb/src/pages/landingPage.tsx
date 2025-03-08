@@ -10,7 +10,9 @@ const LandingPage: React.FC = () => {
   return (
     <>
       <LandingPageBanner />
-      <ReservationPanel />
+      <div className="absolute top-[470px] left-1/2 transform -translate-x-1/2 w-[1216px] h-[124] shadow-lg ">
+        <ReservationPanel />
+      </div>
       <div className='ml-[50px]'>
         <TypesOfStayPanel />
         <RegionsPanel />

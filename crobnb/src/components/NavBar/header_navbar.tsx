@@ -11,7 +11,7 @@ interface NavbarProps {
 class Navbar extends React.Component<NavbarProps> {
     render() {
         return (
-            <div className={"bg-grayscale-white text-grayscale-100 w-full p-4 flex justify-between items-center pl-[112px] pr-[112px] pt-[8px] pb-[8px] h-[82px]"}>
+            <div className={"bg-grayscale-white text-grayscale-100 w-full p-4 flex justify-between items-center pl-[112px] pr-[112px] pt-[8px] pb-[8px] h-[82px] border-b-[1px] border-grayscale-10"}>
                 <div className="flex flex-row items-center">
                     <img src={logo} alt={"logo"} className="mr-2" />
                     <span className="font-museoModerno text-xl">Crobnb</span>

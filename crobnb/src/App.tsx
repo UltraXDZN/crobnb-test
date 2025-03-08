@@ -1,6 +1,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from '@components/layout'
+import AccomodationListPage from './pages/accomodationListPage'
 import LandingPage from './pages/landingPage'
 import SuccessPage from './pages/successPage'
 import ErrorPage from './pages/errorPage'
@@ -18,7 +19,7 @@ function App() {
 
         <Route path="/smjestaj" element={
           <Layout showFooter={true}>
-            <LandingPage />
+            <AccomodationListPage />
           </Layout>
         }>
           <Route path=":id/detalji" element={
@@ -54,7 +55,7 @@ function App() {
 
         <Route path="*" element={
           <Layout showFooter={false}>
-            <ErrorPage code={404} message="Stranica koju tražite nije pronađena." />
+            <ErrorPage code={404} message="Žao nam je, ali stranica koju tražite nije pronađena. Moguće je da je premještena, izbrisana ili da nikada nije postojala." />
           </Layout>
         } />
 

@@ -2,7 +2,12 @@ import React from 'react';
 import { PiSmileyXEyes } from 'react-icons/pi';
 import { useNavigate } from 'react-router-dom';
 
-const ErrorPage: React.FC = () => {
+interface ErrorPageProps {
+    code?: number;
+    message?: string;
+}
+
+const ErrorPage: React.FC<ErrorPageProps> = ({ code = 404, message }) => {
     const navigate = useNavigate();
 
     const handleGoBack = () => {
@@ -15,10 +20,10 @@ const ErrorPage: React.FC = () => {
                 <PiSmileyXEyes className='text-2xl text-primary-100 m-2' />
             </div>
             <h1 className="font-mulish font-bold text-[32px] leading-[44px] tracking-[0px] text-center">
-                Error 404
+                Error {code}
             </h1>
             <p className="mt-4 font-mulish font-normal text-[20px] leading-[32px] tracking-[0px] text-center">
-                Žao nam je, ali stranica koju tražite nije pronađena. Moguće je da je premještena, izbrisana ili da nikada nije postojala.
+                {message}
             </p>
             <p className="mt-2 font-mulish font-normal text-[20px] leading-[32px] tracking-[0px] text-center">
                 Predlažemo da se vratite na Naslovnu stranicu.
