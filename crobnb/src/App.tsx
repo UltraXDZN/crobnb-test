@@ -6,6 +6,7 @@ import ReservationPanel from "./components/ReservationPanel/MainPanel.tsx"
 import TypesOfStayPanel from './components/Types_of_stay/typesOfStayPanel.tsx'
 import RegionsPanel from './components/RegionsPanel/regionsPanel.tsx'
 import NewsPanel from './components/NewsPanel/newsPanel.tsx'
+import AboutUs from './components/AboutUs/aboutUs.tsx'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <RegionsPanel />
       </div>
       <NewsPanel/>
+      <AboutUs/>
     </>
   )
 }
